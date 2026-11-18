@@ -112,9 +112,13 @@ APKは `app/build/outputs/apk/debug/app-debug.apk` に生成されます。yt-dl
 
 ダウンロード対象サイトの利用規約と著作権を確認し、保存する権利のあるコンテンツにのみ使用してください。サイト側の仕様変更により、一部の動画を検出・保存できなくなる場合があります。
 
-## サードパーティーライセンス
+## ライセンス
 
-同梱ライブラリー、実行環境、フィルターリストのライセンスは、Veiload内の「アプリ情報」から確認できます。
+Copyright (C) 2026 Inaho Tech.
+
+Veiloadは **GNU General Public License v3.0 only**（`GPL-3.0-only`）で提供される自由ソフトウェアです。完全な条件は[LICENSE](LICENSE)を参照してください。公開APKに対応するソースコードは、同じバージョンのGitHub Releaseタグから取得できます。
+
+同梱ライブラリーと実行環境に必要な表記・ライセンス本文は[third_party_licenses](third_party_licenses)に収録し、APK内にも同梱しています。Veiload内では「アプリ情報」から確認できます。
 
 ## 作者
 

@@ -2833,6 +2833,13 @@ private data class ThirdPartyLicense(
 
 private val THIRD_PARTY_LICENSES = listOf(
     ThirdPartyLicense(
+        "Veiload",
+        "GPL-3.0-only",
+        "アプリ本体・ソースコードと無保証の条件",
+        "Application source code and no-warranty terms",
+        "https://github.com/inaho-tech/veiload/blob/main/LICENSE"
+    ),
+    ThirdPartyLicense(
         "Phosphor Icon for Compose",
         "MIT",
         "アプリ内アイコン",
@@ -3277,7 +3284,7 @@ private fun MyPageScreen(searchEngine: SearchEngine, onSearchEngineChange: (Sear
                     context.startActivity(Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS, Uri.parse("package:${context.packageName}")))
                 }
                 Box(Modifier.fillMaxWidth().height(1.dp).padding(horizontal = 15.dp).background(Line))
-                ModernSettingRow(Glyph.FileText, "サードパーティーライセンス", "${licenses.size}件", onClick = { licensesExpanded = !licensesExpanded })
+                ModernSettingRow(Glyph.FileText, "ライセンス", "${licenses.size}件", onClick = { licensesExpanded = !licensesExpanded })
             }
         }
 
@@ -3392,7 +3399,7 @@ private fun LegacyMyPageScreen(searchEngine: SearchEngine, onSearchEngineChange:
             }
         }
 
-        item { SectionTitle("サードパーティーライセンス", Glyph.FileText) }
+        item { SectionTitle("ライセンス", Glyph.FileText) }
         items(licenses, key = { it.name }) { license ->
             Row(
                 Modifier.fillMaxWidth().clip(RoundedCornerShape(18.dp)).background(Panel)

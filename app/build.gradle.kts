@@ -25,6 +25,8 @@ android {
         buildConfig = true
     }
 
+    sourceSets.getByName("main").assets.srcDir(rootProject.file("third_party_licenses"))
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
@@ -33,7 +35,6 @@ android {
 
     packaging {
         jniLibs.useLegacyPackaging = true
-        resources.excludes += setOf("META-INF/DEPENDENCIES", "META-INF/LICENSE*", "META-INF/NOTICE*")
     }
 }
 

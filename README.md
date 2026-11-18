@@ -114,9 +114,13 @@ Veiload checks [GitHub Releases](https://github.com/inaho-tech/veiload/releases)
 
 Only download content you have the right to save. Follow the target site's terms and applicable copyright law. Site changes may occasionally break media detection or downloading.
 
-## Third-party licenses
+## License
 
-Licenses for bundled libraries, runtimes, and filter lists are available under **App information** inside Veiload.
+Copyright (C) 2026 Inaho Tech.
+
+Veiload is free software licensed under the **GNU General Public License v3.0 only** (`GPL-3.0-only`). See [LICENSE](LICENSE) for the complete terms. The source corresponding to each published APK is available from the matching GitHub release tag.
+
+Required notices and license texts for bundled libraries and runtimes are in [third_party_licenses](third_party_licenses) and are also packaged inside the APK. They are available from **App information** in Veiload.
 
 ## Author
 
