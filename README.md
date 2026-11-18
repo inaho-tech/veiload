@@ -3,8 +3,8 @@
 </p>
 <h1 align="center">Veiload</h1>
 <p align="center">
-  <strong>Save videos without handing them to another download service.</strong><br>
-  A privacy-conscious Android video downloader that analyzes and processes media on your device.
+  <strong>Private by design. Multiple download methods. A very high success rate.</strong><br>
+  An Android video downloader that analyzes media on-device and automatically falls back between yt-dlp, direct extraction, page detection, and FFmpeg.
 </p>
 <p align="center"><a href="README.ja.md">日本語</a> · English</p>
 <p align="center">
@@ -36,6 +36,8 @@ Veiload combines browsing, media detection, downloading, library management, and
 
 No Veiload account is required. The app contains no advertising SDK, analytics SDK, or crash-reporting SDK. Saved files remain under your control in `Downloads/Veiload`.
 
+Veiload is designed for a **very high download success rate**. If one method cannot save a video, it automatically tries other available paths—including yt-dlp extraction, browser-side media detection, direct file retrieval, and FFmpeg processing for HLS/DASH streams.
+
 ## Privacy by design
 
 - Media extraction and file processing run on the device.
@@ -52,6 +54,7 @@ Veiload is not fully offline: network requests are made to pages you visit, the 
 
 ### Analyze video URLs
 
+- Very high success rate through multiple automatic download methods
 - Analyze video pages, MP4, HLS, DASH, and other media URLs
 - Choose from multiple detected videos
 - Automatic fallback between yt-dlp, direct download, and FFmpeg
