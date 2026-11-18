@@ -175,6 +175,7 @@ import dev.noirload.app.download.DownloadsStore
 import dev.noirload.app.download.MediaFile
 import dev.noirload.app.download.isLikelyVideoAdUrl
 import dev.noirload.app.R
+import dev.noirload.app.BuildConfig
 import dev.noirload.app.BrowserIdentity
 import dev.noirload.app.AppLanguage
 import dev.noirload.app.AppLocale
@@ -3036,7 +3037,7 @@ private fun SettingsScreen(
             ) {
                 Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
                     Column(Modifier.fillMaxWidth().clip(RoundedCornerShape(17.dp)).background(Panel).border(1.dp, Color.White.copy(.07f), RoundedCornerShape(17.dp))) {
-                        PlainSettingRow("Veiload", tr("バージョン 1.0.0", "Version 1.0.0"))
+                        PlainSettingRow("Veiload", tr("バージョン ${BuildConfig.VERSION_NAME}", "Version ${BuildConfig.VERSION_NAME}"))
                         PlainDivider(); PlainSettingRow(tr("Androidの設定", "Android settings"), tr("権限・通知・ストレージ", "Permissions, notifications, storage"), clickable = true) {
                             context.startActivity(Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS, Uri.parse("package:${context.packageName}")))
                         }
@@ -3221,7 +3222,7 @@ private fun MyPageScreen(searchEngine: SearchEngine, onSearchEngineChange: (Sear
                             GlyphIcon(Glyph.ArrowDown, Ink, 25.dp)
                         }
                         Spacer(Modifier.width(13.dp))
-                        Column { Label("Veiload", 21.sp, Paper, FontWeight.Black); Label("Version 1.0.0 · Android Native", 10.sp, Blue, FontWeight.Bold) }
+                        Column { Label("Veiload", 21.sp, Paper, FontWeight.Black); Label("Version ${BuildConfig.VERSION_NAME} · Android Native", 10.sp, Blue, FontWeight.Bold) }
                     }
                     Spacer(Modifier.height(18.dp))
                     Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -3374,7 +3375,7 @@ private fun LegacyMyPageScreen(searchEngine: SearchEngine, onSearchEngineChange:
         item { SectionTitle("アプリ情報", Glyph.Info) }
         item {
             Column(Modifier.fillMaxWidth().clip(RoundedCornerShape(22.dp)).background(Panel).border(1.dp, Color.White.copy(.075f), RoundedCornerShape(22.dp)).padding(16.dp)) {
-                SettingValue("Veiload", "Version 1.0.0")
+                SettingValue("Veiload", "Version ${BuildConfig.VERSION_NAME}")
                 Spacer(Modifier.height(12.dp))
                 SettingValue("プラットフォーム", "Android Native")
                 Spacer(Modifier.height(12.dp))
